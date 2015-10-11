@@ -128,7 +128,7 @@
 <li>setuptools ... パッケージングするための必須ツール</li>
 <li>setup.py ... パッケージのメタデータを記載</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">find_packages</span>
 
 <span class="n">setup</span><span class="p">(</span>
     <span class="n">name</span><span class="o">=</span><span class="s">&#39;sample&#39;</span><span class="p">,</span>
@@ -820,8 +820,8 @@ sample-0.0.1.tar.gz
 <li>デファクトスタンダードな「egg」を「pip」は取り扱わなかった。</li>
 <li>「wheel」はPEP準拠フォーマットなので「pip」も対応。</li>
 <li>直接インストール可能なので、インストール時間の短縮につながる。</li>
-<li>whleelパッケージの作成には「wheel」のインストールが必要です。</li>
-<li>whleelパッケージのインストールには「wheel」は必要ありません。</li>
+<li>wheelパッケージの作成には「wheel」のインストールが必要です。</li>
+<li>wheelパッケージのインストールには「wheel」は必要ありません。</li>
 </ul>
 <div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip install wheel
 </pre></div>
