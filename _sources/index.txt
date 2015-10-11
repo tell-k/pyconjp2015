@@ -14,7 +14,7 @@ PyPIデビュー2015
 * tell-k
 * BeProud.inc
 * 情弱プログラマー
-
+* 「猫はいません」
 
 目的/動機
 =====================================
@@ -48,7 +48,6 @@ PyPIデビュー2015
 
 .. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/ljj0l-e4.png
    :width: 70%
-
 
 Pythonプロフェッショナルプログラミング 第2版
 ===============================================
