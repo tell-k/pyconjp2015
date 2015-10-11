@@ -1,0 +1,1334 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PyPIデビュー2015</title>
+    <meta charset='utf-8'>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+  </head>
+  <body style='display: none;'>
+    
+  <div class="section" id="pypi2015">
+<h1>PyPIデビュー2015<a class="headerlink" href="#pypi2015" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">tell-k</div>
+<div class="line">PyCon JP 2015 (2015.10.11)</div>
+</div>
+<div class="section" id="id1">
+<h2>お前誰よ？<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<img alt="https://avatars3.githubusercontent.com/u/26263?v=3&amp;s=150" src="https://avatars3.githubusercontent.com/u/26263?v=3&amp;s=150" />
+<img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/vxjmiemo.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/vxjmiemo.png" />
+<ul class="simple">
+<li>tell-k</li>
+<li>BeProud.inc</li>
+<li>情弱プログラマー</li>
+</ul>
+</div>
+<div class="section" id="id2">
+<h2>目的/動機<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>趣味でちょいちょいPyPIにアップロードするようになった</li>
+<li>一通り自分の中でやり方が固まってきた</li>
+<li>振り返りも兼ねて、一通りまとめておきたかった</li>
+<li>初心者の人でも、迷わず、事故らず、サクッと、ちゃんとやってる感を醸しだしつつ、 マサカリを投げられないように、PyPIにデビューできるようになるといいですね。</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h2>趣味<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://pypi.python.org/pypi/sphinxjp.themes.basicstrap">https://pypi.python.org/pypi/sphinxjp.themes.basicstrap</a></li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/sphinxjp.themes.revealjs">https://pypi.python.org/pypi/sphinxjp.themes.revealjs</a></li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/sphinxcontrib-gravatar">https://pypi.python.org/pypi/sphinxcontrib-gravatar</a></li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/django-modelsdoc">https://pypi.python.org/pypi/django-modelsdoc</a></li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/goolabs">https://pypi.python.org/pypi/goolabs</a></li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/csquery">https://pypi.python.org/pypi/csquery</a></li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/woothee-python">https://pypi.python.org/pypi/woothee-python</a></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>対象<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Pythonでライブラリを配布してみたい人</li>
+<li>PyPIとかパッケージング周りがまだよく分からない人</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h2>対象<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>ぶっちゃけ調べるのがだるいので、まとめておいて欲しい人</li>
+</ul>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/ljj0l-e4.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/ljj0l-e4.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/ljj0l-e4.png" style="width: 70%;" /></a>
+</div>
+<div class="section" id="python-2">
+<h2>Pythonプロフェッショナルプログラミング 第2版<a class="headerlink" href="#python-2" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="http://ecx.images-amazon.com/images/I/51ZNlK0%2Bn-L._SL160_.jpg"><img alt="http://ecx.images-amazon.com/images/I/51ZNlK0%2Bn-L._SL160_.jpg" src="http://ecx.images-amazon.com/images/I/51ZNlK0%2Bn-L._SL160_.jpg" style="width: 20%;" /></a>
+<ul class="simple">
+<li>今日話す内容の半分くらいこの本に書いてあります</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h2>目次<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>PyPIとは？</li>
+<li>PyPAとは？</li>
+<li>Pythonパッケージ作成</li>
+<li>便利サービス</li>
+<li>トラブルシューティング</li>
+<li>参考</li>
+<li>まとめ</li>
+</ul>
+</div>
+<div class="section" id="pypi">
+<h2>PyPIとは？<a class="headerlink" href="#pypi" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/3x4hkmn6.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/3x4hkmn6.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/3x4hkmn6.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="id7">
+<h2>PyPiとは？<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python Package Index(<a class="reference external" href="https://pypi.python.org/pypi">https://pypi.python.org/pypi</a>)</li>
+<li>PSF(Python Software Foundation)が運営するPythonパッケージを管理するためのサイト/リポジトリ</li>
+<li>ここにPythonパッケージをアップロードする</li>
+<li><strong>パイピーアイ</strong> と読むそうです。</li>
+</ul>
+</div>
+<div class="section" id="pypa">
+<h2>PyPAとは？<a class="headerlink" href="#pypa" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/zli4wet3.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/zli4wet3.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/zli4wet3.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="id8">
+<h2>PyPAとは？<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python Package Authority(<a class="reference external" href="https://github.com/pypa">https://github.com/pypa</a>)</li>
+<li><a class="reference external" href="https://bitbucket.org/pypa/">https://bitbucket.org/pypa/</a></li>
+<li>Pythonパッケージに関連する諸々取りまとめる <strong>有志のコミュニティ</strong> です</li>
+<li>「setuptools」や「pip」 や 「virtualenv」 のなどのパッケージング関連のライブラリの管理</li>
+<li>次世代PyPIの <a class="reference external" href="https://warehouse.python.org/">Warehouse</a> も開発</li>
+<li>パッケージ関連のPEPなどを提案/推進</li>
+<li><strong>パイピーエー</strong> と勝手に読んでいます</li>
+</ul>
+</div>
+<div class="section" id="python">
+<h2>Pythonパッケージ作成<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id9">
+<h2>Pythonパッケージ作成<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>アカウント作成(<a class="reference external" href="https://pypi.python.org/pypi?%3Aaction=register_form">https://pypi.python.org/pypi?%3Aaction=register_form</a>)</li>
+<li>setup.pyを書く</li>
+<li>パッケージ登録 &amp; アップロード</li>
+</ol>
+</div>
+<div class="section" id="setup-py">
+<h2>2. setup.py<a class="headerlink" href="#setup-py" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>setuptools ... パッケージングするための必須ツール</li>
+<li>setup.py ... パッケージのメタデータを記載</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span>
+
+<span class="n">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s">&#39;sample&#39;</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="s">&#39;1.0.0&#39;</span><span class="p">,</span>
+    <span class="n">url</span><span class="o">=</span><span class="s">&#39;https://github.com/pypa/sampleproject&#39;</span><span class="p">,</span>
+    <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;tests*&#39;</span><span class="p">]),</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h2>3. パッケージ登録<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c"># パッケージ登録</span>
+<span class="nv">$ </span>python setup.py register
+<span class="c"># 指示に従って入力</span>
+
+<span class="c"># パッケージアップロード</span>
+<span class="nv">$ </span>python setup.py sdist upload
+</pre></div>
+</div>
+<p>終わりです。簡単ですね。</p>
+</div>
+<div class="section" id="id11">
+<h2>そういうわけにもいきますまい...<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<div class="figure">
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/wuuz3mx_.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/wuuz3mx_.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/wuuz3mx_.png" style="width: 70%;" /></a>
+</div>
+</div>
+<div class="section" id="id12">
+<h2>Pythonパッケージ作成<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>setup.pyを書く</li>
+<li>開発する</li>
+<li>テストする</li>
+<li>配布物を決める</li>
+<li>登録/アップロード</li>
+</ol>
+</div>
+<div class="section" id="id13">
+<h2>構成<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p>例えば「sample」というパッケージを妄想する</p>
+<div class="highlight-bash"><div class="highlight"><pre>sample
+  ├── MANIFEST.in
+  ├── README.rst
+  ├── sample        &lt;- Pythonパッケージ
+  │   └── __init__.py
+  ├── setup.cfg
+  ├── setup.py
+  └── tests         &lt;- テストコード
+     ├── __init__.py
+     └── test_sample.py
+</pre></div>
+</div>
+<ul class="simple">
+<li><strong>setup.cfg</strong> は「setup.py」のdefault値や、aliasを管理する設定ファイル</li>
+<li><strong>MANIFEST.in</strong>  は 配布物に含める内容を定義します。後述します。</li>
+</ul>
+</div>
+<div class="section" id="id14">
+<h2>1. setup.pyを書く<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>パッケージのメタデータを記述するファイル。</li>
+<li>「setuptools」の setup関数を実行。</li>
+<li>pipで配布されるパッケージは必ずこれが必要。</li>
+</ul>
+</div>
+<div class="section" id="id15">
+<h2>setup.pyに書く事<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>name ....................... パッケージ名</li>
+<li>version ..................... バージョン番号 ex) 1.2.0</li>
+<li>description ............. パッケージの説明</li>
+<li>long_description ... パッケージの説明(長)(ReST)</li>
+<li>url ............................. プロジェクトのURL</li>
+<li>author ..................... 作者名</li>
+<li>author_email ......... 作者のメアド</li>
+<li>license ....................... ライセンス ex) MIT</li>
+<li>classifiers ................ カテゴリ</li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h2>setup.pyに書く事<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>keywords ................. 関連キーワード</li>
+<li>packages ................. インストール対象パッケージのパス</li>
+<li>install_requires ........ 依存パッケージ</li>
+<li>tests_require ........... setup.py test のための依存パッケージ</li>
+<li>extras_require ......... インストール時には必要のない追加依存パッケージ</li>
+<li>entry_points ............ プラグインサポート</li>
+<li>参考: <a class="reference external" href="http://docs.python.jp/3/distutils/setupscript.html">http://docs.python.jp/3/distutils/setupscript.html</a></li>
+<li>参考: <a class="reference external" href="https://packaging.python.org/en/latest/distributing/#setup-args">https://packaging.python.org/en/latest/distributing/#setup-args</a></li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h2>setup.pyの例<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">setup</span><span class="p">(</span>
+    <span class="n">name</span><span class="o">=</span><span class="s">&#39;sample&#39;</span><span class="p">,</span>
+    <span class="n">version</span><span class="o">=</span><span class="s">&#39;1.0.0&#39;</span><span class="p">,</span>
+    <span class="n">description</span><span class="o">=</span><span class="s">&#39;A sample Python project&#39;</span><span class="p">,</span>
+    <span class="n">long_description</span><span class="o">=</span><span class="n">long_description</span><span class="p">,</span>
+    <span class="n">url</span><span class="o">=</span><span class="s">&#39;https://github.com/pypa/sampleproject&#39;</span><span class="p">,</span>
+    <span class="n">author</span><span class="o">=</span><span class="s">&#39;The Python Packaging Authority&#39;</span><span class="p">,</span>
+    <span class="n">author_email</span><span class="o">=</span><span class="s">&#39;pypa-dev@googlegroups.com&#39;</span><span class="p">,</span>
+    <span class="n">license</span><span class="o">=</span><span class="s">&#39;MIT&#39;</span><span class="p">,</span>
+    <span class="n">classifiers</span><span class="o">=</span><span class="p">[</span>
+        <span class="s">&#39;Development Status :: 3 - Alpha&#39;</span><span class="p">,</span>
+        <span class="s">&#39;Intended Audience :: Developers&#39;</span><span class="p">,</span>
+        <span class="s">&#39;Topic :: Software Development :: Build Tools&#39;</span><span class="p">,</span>
+        <span class="s">&#39;License :: OSI Approved :: MIT License&#39;</span><span class="p">,</span>
+        <span class="s">&#39;Programming Language :: Python :: 2&#39;</span><span class="p">,</span>
+        <span class="s">&#39;Programming Language :: Python :: 3&#39;</span><span class="p">,</span>
+    <span class="p">],</span>
+    <span class="n">keywords</span><span class="o">=</span><span class="s">&#39;sample setuptools development&#39;</span><span class="p">,</span>
+    <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;contrib&#39;</span><span class="p">,</span> <span class="s">&#39;docs&#39;</span><span class="p">,</span> <span class="s">&#39;tests*&#39;</span><span class="p">]),</span>
+    <span class="n">install_requires</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;peppercorn&#39;</span><span class="p">],</span>
+ <span class="p">)</span>
+</pre></div>
+</div>
+<p>参考: <a class="reference external" href="https://github.com/pypa/sampleproject/blob/master/setup.py">https://github.com/pypa/sampleproject/blob/master/setup.py</a></p>
+</div>
+<div class="section" id="classifiers-is">
+<h2>classifiers is 何?<a class="headerlink" href="#classifiers-is" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Pythonパッケージをカテゴライズする情報</li>
+<li>PyPIの <a class="reference external" href="https://pypi.python.org/pypi?:action=browse">classifiersのページ</a> から辿れるようになる。</li>
+<li><a class="reference external" href="https://pypi.python.org/pypi?:action=list_classifiers">classifiersの一覧</a> から選ぶことができる。</li>
+</ul>
+</div>
+<div class="section" id="id19">
+<h2>classifiers<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Frameworkの細かいバージョン指定</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>Framework :: Django
+Framework :: Django :: 1.4
+Framework :: Django :: 1.5
+Framework :: Django :: 1.6
+Framework :: Django :: 1.7
+Framework :: Django :: 1.8
+</pre></div>
+</div>
+<ul class="simple">
+<li>開発ステータス</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>Development Status :: 1 - Planning
+Development Status :: 2 - Pre-Alpha
+Development Status :: 3 - Alpha
+Development Status :: 4 - Beta
+Development Status :: 5 - Production/Stable
+Development Status :: 6 - Mature
+Development Status :: 7 - Inactive
+</pre></div>
+</div>
+</div>
+<div class="section" id="version">
+<h2>version<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.pypa.io/en/latest/peps/#pep440s">PEP440 Version Identification and Dependency Specification</a></li>
+<li>バージョン番号のつけ方についてのPEP</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>1.2.0.dev1  # Development release
+1.2.0a1     # Alpha Release
+1.2.0b1     # Beta Release
+1.2.0rc1    # Release Candidate
+1.2.0       # Final Release
+1.2.0.post1 # Post Release
+15.10       # Date based release
+23          # Serial release
+</pre></div>
+</div>
+</div>
+<div class="section" id="id20">
+<h2>version<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>PyPAのガイドでは、 <a class="reference external" href="http://semver.org/lang/ja/">Sematic Versioning</a>  も推奨</li>
+<li><strong>メジャー.マイナー.パッチ</strong> の3つからなるバージョン番号。例 <strong>1.2.0</strong></li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>バージョンナンバーは、メジャー.マイナー.パッチとし、バージョンを上げるには、
+
+- APIの変更に互換性のない場合はメジャーバージョンを、
+- 後方互換性があり機能性を追加した場合はマイナーバージョンを、
+- 後方互換性を伴うバグ修正をした場合はパッチバージョンを上げます。
+
+プレリリースやビルドナンバーなどのラベルに関しては、メジャー.マイナー.パッチの
+形式を拡張する形で利用することができます。
+</pre></div>
+</div>
+<p>via <a class="reference external" href="http://semver.org/lang/ja/">http://semver.org/lang/ja/</a></p>
+</div>
+<div class="section" id="id21">
+<h2>version<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>「setup.py」やソースコードなど、あちこちにバージョン番号を書くと更新を忘れたりします。</li>
+<li>ソースコードの一箇所に書いて、それを「setup.py」から参照する。</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">find_version</span><span class="p">(</span><span class="o">*</span><span class="n">file_paths</span><span class="p">):</span>
+    <span class="n">version_file</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="o">*</span><span class="n">file_paths</span><span class="p">)</span>
+    <span class="n">version_match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="s">r&quot;^__version__ = [&#39;</span><span class="se">\&quot;</span><span class="s">]([^&#39;</span><span class="se">\&quot;</span><span class="s">]*)[&#39;</span><span class="se">\&quot;</span><span class="s">]&quot;</span><span class="p">,</span>
+                              <span class="n">version_file</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">M</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">version_match</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">version_match</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s">&quot;Unable to find version string.&quot;</span><span class="p">)</span>
+
+<span class="n">setup</span><span class="p">(</span>
+   <span class="o">...</span>
+   <span class="n">version</span><span class="o">=</span><span class="n">find_version</span><span class="p">(</span><span class="s">&quot;package&quot;</span><span class="p">,</span> <span class="s">&quot;__init__.py&quot;</span><span class="p">)</span>
+   <span class="o">...</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>via <a class="reference external" href="https://packaging.python.org/en/latest/single_source_version/#single-sourcing-the-version">Single-sourcing the Project Version</a></p>
+</div>
+<div class="section" id="long-description">
+<h2>long_description<a class="headerlink" href="#long-description" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>PyPI上で表示される長い説明文</li>
+<li><a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText</a> に対応。綺麗に整形される</li>
+<li>Markdownに対応してません。</li>
+</ul>
+<img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/m5j2qspj.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/m5j2qspj.png" />
+</div>
+<div class="section" id="id22">
+<h2>long_description<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>README.rst のファイルの中身を setup に渡す</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">here</span><span class="p">,</span> <span class="s">&#39;README.rst&#39;</span><span class="p">),</span> <span class="n">encoding</span><span class="o">=</span><span class="s">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">long_description</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+ <span class="n">setup</span><span class="p">(</span>
+    <span class="o">...</span>
+    <span class="n">long_description</span><span class="o">=</span><span class="n">long_description</span><span class="p">,</span>
+    <span class="o">...</span>
+ <span class="p">)</span>
+</pre></div>
+</div>
+<p>via <a class="reference external" href="https://github.com/pypa/sampleproject/blob/master/setup.py">https://github.com/pypa/sampleproject/blob/master/setup.py</a></p>
+</div>
+<div class="section" id="packages">
+<h2>packages<a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>実際にインストールされるPythonパッケージのパス</li>
+<li>「setuptools」に「find_packages」という便利関数があります。</li>
+<li>プロジェクト内から適当にPythonパッケージを探してくれる</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">find_packages</span>
+
+<span class="n">setup</span><span class="p">(</span>
+   <span class="o">...</span>
+   <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;tests*&#39;</span><span class="p">])</span>
+   <span class="o">...</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="exclude">
+<h2>excludeで適切に除外<a class="headerlink" href="#exclude" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>「packages」には「pip install」した時に必要なものだけを指定しよう</li>
+<li>テストコードは、ライブラリ利用時には不要。</li>
+<li>除外しない場合、そのままトップレベルにインストールされてしまう。</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># × 除外しない</span>
+<span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">()</span>
+
+<span class="c"># ○ 除外する</span>
+<span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;tests*&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># 除外しなかった場合</span>
+<span class="kn">import</span> <span class="nn">sample</span>
+<span class="kn">import</span> <span class="nn">tests.test_sample</span>  <span class="c"># トップレベルでテストコードがインストールされてしまう</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-requires">
+<h2>install_requires<a class="headerlink" href="#install-requires" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>依存パッケージ</li>
+<li>「pip install」時に一緒にインストールしてくれる</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">setup</span><span class="p">(</span>
+   <span class="o">...</span>
+   <span class="n">install_requires</span><span class="o">=</span><span class="p">[</span>
+      <span class="s">&#39;Hoge&#39;</span><span class="p">,</span>
+   <span class="p">]</span>
+   <span class="o">...</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="install-requires-vs-requirements-txt">
+<h2>install_requires VS requirements.txt<a class="headerlink" href="#install-requires-vs-requirements-txt" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>「pip freeze」</li>
+<li>インストールされているPythonパッケージを一覧で出してくれる。</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip freeze &gt; requirements.txt
+</pre></div>
+</div>
+<ul class="simple">
+<li>requirements.txt</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre># インストール済みパッケージの一覧を出してくれる
+# バージョンを固定
+Spam==1.0.0
+Ham==2.1.0
+Egg==1.3.0
+</pre></div>
+</div>
+</div>
+<div class="section" id="id23">
+<h2>install_requiresにこれ使えば？<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>一見問題なさそうに見える方法</li>
+<li>依存パッケージは、バージョン固定でインストールされる</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s">&#39;requiments.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+       <span class="n">requires</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+
+<span class="n">install_requires</span><span class="o">=</span><span class="n">requires</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id24">
+<h2>バージョン固定されると単純に困る<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip install Spam
+<span class="nv">$ </span>pip freeze <span class="p">|</span> grep Spam
+<span class="nv">Spam</span><span class="o">==</span>1.1.0
+<span class="c"># =&gt; Spamの最新版 1.1.0 が インストール</span>
+
+<span class="nv">$ </span>pip install sample
+<span class="nv">$ </span>pip freeze <span class="p">|</span> grep Spam
+<span class="nv">Spam</span><span class="o">==</span>1.0.0
+<span class="c"># =&gt; install_requires の バージョン固定により1.0.0になってしまう</span>
+
+＿人人人人人人人人人人人人人人人＿
+＞　突然のダウングレード！！！　＜
+￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^￣
+
+<span class="c"># 別パッケージが同様に、別のバージョン番号を固定で指定してると、</span>
+<span class="c"># バージョン競合が発生しインストールに失敗するケースも...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id25">
+<h2>とてもつらい<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/p1fcoye0.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/p1fcoye0.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/p1fcoye0.png" style="width: 40%;" /></a>
+</div>
+<div class="section" id="id26">
+<h2>install_requires の 役割<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>そのパッケージを動かすための <strong>最低限必要とする依存パッケージ</strong></li>
+<li>「pip freeze」による 「requirements.txt」は <strong>Python実行環境を再現するため</strong></li>
+<li>それぞれ主な利用用途が違う</li>
+<li>「install_requires」は、最低限必要なバージョンを記載する程度に留めましょう</li>
+<li>バージョンを指定する場合はドキュメントやREADMEに記載があると親切</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="c"># そもそもバージョンを指定しない</span>
+<span class="n">install_requires</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;Ham&#39;</span><span class="p">]</span>
+
+<span class="c"># 最低限必要なバージョンだけを記載</span>
+<span class="n">install_requires</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;Ham&gt;=1.0.0&#39;</span><span class="p">]</span>
+
+<span class="c"># 範囲を限定的にするとか</span>
+<span class="n">install_requires</span><span class="o">=</span><span class="p">[</span><span class="s">&#39;Ham&gt;=1.0.0,&lt;2&#39;</span><span class="p">]</span>
+
+<span class="c"># requirements.txtにもバージョン指定なし、範囲指定を記述可能</span>
+<span class="c"># install_requiresにバージョンを固定しないというのが大事</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>参考: <a class="reference external" href="http://python-packaging-user-guide.readthedocs.org/en/latest/requirements/">install_requires vs Requirements files</a></li>
+</ul>
+</div>
+<div class="section" id="id27">
+<h2>開発する<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python2/3両対応</li>
+<li>開発モード</li>
+</ul>
+</div>
+<div class="section" id="python2-3">
+<h2>Python2/3両対応<a class="headerlink" href="#python2-3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python2.7 は積極的にサポートはされませんが2020年までメンテされます</li>
+<li>Python2.8 はありません</li>
+<li>Python2 の利用者は結構います。ライブラリやアプリなどがPython3に移行仕切れていない</li>
+<li>スムーズ移行できるように両対応しておくのが良い</li>
+<li>小さいパッケージであれば難しくはありません</li>
+<li>参考: <a class="reference external" href="http://shimizukawa.bitbucket.org/pyconapac2013-how-to-make-with-python2-to-3/index.html">Python2.5からPython3.3で動作するツールの作り方</a></li>
+</ul>
+</div>
+<div class="section" id="id28">
+<h2>Python2/3両対応<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">2/3の互換性を保つライブラリを利用する(pipでインストール可能)</p>
+<ul class="simple">
+<li><a class="reference external" href="https://pypi.python.org/pypi/six">six</a></li>
+<li><a class="reference external" href="https://pypi.python.org/pypi/future">python-future</a></li>
+</ul>
+</li>
+<li><p class="first">__future__ で Py3 の機能を利用する</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span><span class="p">,</span> <span class="n">print_function</span><span class="p">,</span> <span class="n">absolute_import</span><span class="p">,</span> <span class="n">unicode_literals</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>参考: <a class="reference external" href="http://methane.hatenablog.jp/entries/2014/01/18">Python 2/3 両対応のために `unicode_literals` を使うべきか</a></li>
+</ul>
+</li>
+<li><p class="first">2to3 というツールはメンテコストが高そうなのでオススメしないです</p>
+<ul class="simple">
+<li>参考: <a class="reference external" href="http://www.freia.jp/taka/blog/sphinx-dev-remove-2to3/index.html">2014/05/25 Sphinxメンテナ日記: 2to3やめてsixに切り換えました</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id29">
+<h2>sixの例<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">six</span>
+
+<span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;hoge1&#39;</span><span class="p">:</span> <span class="s">&#39;fuga&#39;</span><span class="p">,</span> <span class="s">&#39;hoge2&#39;</span><span class="p">:</span> <span class="s">&#39;fuga&#39;</span><span class="p">,</span> <span class="p">}</span>
+
+<span class="c"># python2</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+
+<span class="c"># python3</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">d</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+
+<span class="c"># python2, 3 両方</span>
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">six</span><span class="o">.</span><span class="n">iteritems</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id30">
+<h2>先達の知見を得る<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>困ったら他の著名なライブラリがどうやってるか参考にすると良い</li>
+<li>慣習的に互換性を吸収するようなモジュールは <strong>compat.py</strong> という名前が多い。</li>
+<li>githubでお気に入りのライブラリの <strong>compat.py</strong> を探そう。</li>
+</ul>
+</div>
+<div class="section" id="python3">
+<h2>Python3しか対応しないのもあり<a class="headerlink" href="#python3" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="http://cdn-ak.f.st-hatena.com/images/fotolife/n/niguruta/20101015/20101015123332.jpg"><img alt="http://cdn-ak.f.st-hatena.com/images/fotolife/n/niguruta/20101015/20101015123332.jpg" src="http://cdn-ak.f.st-hatena.com/images/fotolife/n/niguruta/20101015/20101015123332.jpg" style="width: 90%;" /></a>
+</div>
+<div class="section" id="id31">
+<h2>開発モード<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>「pip install -e .」</li>
+<li>「python setup.py develop」 と一緒</li>
+<li>「sitepackages」にパスを通してライブラリとして利用できるようになる。</li>
+<li>これを知らなくてキツかった。。。</li>
+<li>参考: <a class="reference external" href="http://aodag.posthaven.com/python-3">Pythonライブラリパスをコントロールする</a></li>
+</ul>
+</div>
+<div class="section" id="id33">
+<h2>開発モード<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip install -e .
+
+<span class="c"># そのまま動作確認可能</span>
+<span class="nv">$ </span>python
+Python 3.4.3 <span class="o">(</span>default, Mar <span class="m">23</span> 2015, 04:19:36<span class="o">)</span>
+<span class="o">[</span>GCC 4.2.1 Compatible Apple LLVM 6.0 <span class="o">(</span>clang-600.0.57<span class="o">)]</span> on darwin
+Type <span class="s2">&quot;help&quot;</span>, <span class="s2">&quot;copyright&quot;</span>, <span class="s2">&quot;credits&quot;</span> or <span class="s2">&quot;license&quot;</span> <span class="k">for</span> more information.
+&gt;&gt;&gt; import sample
+&gt;&gt;&gt; sample.main<span class="o">()</span>
+Call your main application code here
+</pre></div>
+</div>
+</div>
+<div class="section" id="id34">
+<h2>テスト<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>利用者視点で採用する際の後押しになる</li>
+<li>サポートされるべき範囲が適切にテストできてるか確認できる</li>
+<li>tox, pytestなど充実したライブラリがある</li>
+</ul>
+</div>
+<div class="section" id="tox">
+<h2>tox<a class="headerlink" href="#tox" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://testrun.org/tox/latest/">https://testrun.org/tox/latest/</a></li>
+<li>複数のPythonのバージョンを一気にテストできる便利ツール</li>
+<li>パッケージオーナーにはおなじみ</li>
+<li>pipでインストールして設定ファイル(tox.ini)を作るだけ使えます。</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip install tox
+</pre></div>
+</div>
+</div>
+<div class="section" id="tox-ini">
+<h2>tox.iniの例<a class="headerlink" href="#tox-ini" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>処理系のインストールは事前に必要です</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>[tox]
+envlist=py27,py34,py35,pypy
+
+[testenv]
+commands=
+    python setup.py test
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c"># 全バージョンでテストを実行</span>
+<span class="nv">$ </span>tox
+
+<span class="c"># バージョンを指定してテスト実行</span>
+<span class="nv">$ </span>tox -e py35
+</pre></div>
+</div>
+</div>
+<div class="section" id="id35">
+<h2>どこまでサポートすればいいの？<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python3系は 3.5, 3.4, 3,3</li>
+<li>Python2系は 2.7</li>
+<li>3.2以下は ユニコードリテラル(u&#8221;hoge&#8221;)が使えなかったり、ユーザー数も少ない事から、対応を切り捨てたりするライブラリもあります。</li>
+<li>互換性のためのライブラリの「python-future」も切り捨てています。</li>
+<li>pip の次メジャーバージョンアップ(7 -&gt; 8)の時は切り捨てるそうです。</li>
+<li>参考: <a class="reference external" href="https://groups.google.com/forum/#!msg/pypa-dev/Ef0PF2ZGAv0/hrO4BHkOBQAJ">Dropping support for Python 3.2 in pip 8?</a></li>
+</ul>
+</div>
+<div class="section" id="pytest">
+<h2>pytest<a class="headerlink" href="#pytest" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://pytest.org/latest/">http://pytest.org/latest/</a></li>
+<li>assert の失敗時の情報を増やしてくれる -&gt; 見易い</li>
+<li>unittestのようにクラスを使わなくても良い</li>
+<li>unittestのようにassertXXXを沢山おぼえなくても良い</li>
+<li>テストランナーとしても使い易い</li>
+</ul>
+</div>
+<div class="section" id="assert">
+<h2>assertが賢くなる例<a class="headerlink" href="#assert" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>py.test test_assert.py
+
+...
+
+<span class="o">===========</span> <span class="nv">FAILURES</span> <span class="o">=============</span>
+__________ test_main _____________
+
+    def test_main<span class="o">()</span>:
+        <span class="nv">lst1</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;test1&#39;</span>, <span class="s1">&#39;test2&#39;</span><span class="o">]</span>
+        <span class="nv">lst2</span> <span class="o">=</span> <span class="o">[</span><span class="s1">&#39;test1&#39;</span>, <span class="s1">&#39;test3&#39;</span><span class="o">]</span>
+
+&gt;       assert <span class="nv">lst1</span> <span class="o">==</span> lst2, <span class="s1">&#39;Not equal lists&#39;</span>
+
+E       AssertionError: Not equal lists
+E       assert <span class="o">[</span><span class="s1">&#39;test1&#39;</span>, <span class="s1">&#39;test2&#39;</span><span class="o">]</span> <span class="o">==</span> <span class="o">[</span><span class="s1">&#39;test1&#39;</span>, <span class="s1">&#39;test3&#39;</span><span class="o">]</span>
+E         At index <span class="m">1</span> diff: <span class="s1">&#39;test2&#39;</span> !<span class="o">=</span> <span class="s1">&#39;test3&#39;</span>
+E         Full diff:
+E         - <span class="o">[</span><span class="s1">&#39;test1&#39;</span>, <span class="s1">&#39;test2&#39;</span><span class="o">]</span>
+E         ?                ^
+E         + <span class="o">[</span><span class="s1">&#39;test1&#39;</span>, <span class="s1">&#39;test3&#39;</span><span class="o">]</span>
+E         ?
+</pre></div>
+</div>
+</div>
+<div class="section" id="setup-py-test">
+<h2>setup.py testから呼ぶ<a class="headerlink" href="#setup-py-test" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>「 <strong>setup.py test</strong> でテストする奴は良く訓練された <strong>Pythonista</strong> だ」</li>
+<li>「setup.py test」てテストができれば誰も迷わなくて幸せ</li>
+<li>「pytest」を実行するために「py.test」コマンドを実行する必要がある</li>
+<li>「setup.py test」で呼び出せるようにしたい</li>
+<li>ドキュメントに書いてあります</li>
+<li><a class="reference external" href="https://pytest.org/latest/goodpractises.html#integration-with-setuptools-test-commands">Integration with setuptools test commands</a></li>
+</ul>
+</div>
+<div class="section" id="id36">
+<h2>setup.py testから呼ぶ<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>setup.py でtestコマンドをカスタマイズできます。</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="kn">from</span> <span class="nn">setuptools.command.test</span> <span class="kn">import</span> <span class="n">test</span> <span class="k">as</span> <span class="n">TestCommand</span>
+
+<span class="k">class</span> <span class="nc">PyTest</span><span class="p">(</span><span class="n">TestCommand</span><span class="p">):</span>
+    <span class="n">user_options</span> <span class="o">=</span> <span class="p">[(</span><span class="s">&#39;pytest-args=&#39;</span><span class="p">,</span> <span class="s">&#39;a&#39;</span><span class="p">,</span> <span class="s">&quot;Arguments to pass to py.test&quot;</span><span class="p">)]</span>
+
+    <span class="k">def</span> <span class="nf">initialize_options</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">TestCommand</span><span class="o">.</span><span class="n">initialize_options</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pytest_args</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">finalize_options</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">TestCommand</span><span class="o">.</span><span class="n">finalize_options</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">test_args</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">test_suite</span> <span class="o">=</span> <span class="bp">True</span>
+
+    <span class="k">def</span> <span class="nf">run_tests</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="c">#import here, cause outside the eggs aren&#39;t loaded</span>
+        <span class="kn">import</span> <span class="nn">pytest</span>
+        <span class="n">errno</span> <span class="o">=</span> <span class="n">pytest</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pytest_args</span><span class="p">)</span>
+        <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="n">errno</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id37">
+<h2>setup.py testから呼ぶ<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>cmdclassを活用するとテスト以外のコマンドも追加できたりします。便利ですね。</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">setup</span><span class="p">(</span>
+    <span class="o">...</span>
+    <span class="n">tests_require</span> <span class="o">=</span> <span class="p">[</span><span class="s">&#39;pytest&#39;</span><span class="p">],</span>
+    <span class="n">cmdclass</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;test&#39;</span><span class="p">:</span> <span class="n">PyTest</span><span class="p">},</span>
+    <span class="o">...</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c"># py.testが実行される</span>
+<span class="nv">$ </span>python setup.py <span class="nb">test</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="coverage">
+<h2>coverage<a class="headerlink" href="#coverage" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>pytestからcoverage取れるpytest-covというプラグラインがある</li>
+<li>&#8220;&#8211;cov-report term-missing&#8221; がおすすめ。テストが通ってない行番号を教えてくれる</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>$ python setup.py test -a &quot;--cov sample --cov-report term-missing&quot;
+</pre></div>
+</div>
+<img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/s8kwn9ff.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/s8kwn9ff.png" />
+</div>
+<div class="section" id="id38">
+<h2>配布物を決める<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>ソースコード以外に配布すべきもの</li>
+<li>setup.py</li>
+<li>setup.cfg</li>
+<li>README.rst</li>
+<li>MANIFEST.in ... 追加ファイルの定義</li>
+<li>tox.ini</li>
+<li>テストコード</li>
+<li>ドキュメント</li>
+</ul>
+</div>
+<div class="section" id="manifest-in">
+<h2>MANIFEST.in<a class="headerlink" href="#manifest-in" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>sdist(ソースディストリビューション)に一緒に追加したいファイルを定義するファイル</li>
+<li>ビルドコマンドを叩くとこれに従って配布パッケージを生成してくれる</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>include README.rst
+include tox.ini
+include setup.cfg
+recursive-include docs *
+recursive-include tests *
+include sample/*.dat
+</pre></div>
+</div>
+</div>
+<div class="section" id="id39">
+<h2>ビルド<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>配布物が決まったらビルドする</li>
+<li>sdist ... ソースディストリビューション</li>
+<li>wheel ... バイナリパッケージ</li>
+</ul>
+</div>
+<div class="section" id="sdist">
+<h2>sdist<a class="headerlink" href="#sdist" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>ソースディストリビューション</li>
+<li>MANIFEST.in に従って配布内容をで固めてくれる</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c"># ビルド</span>
+<span class="nv">$ </span>python setup.py sdist
+
+<span class="c"># 直下のdistにsdistが生成されます</span>
+<span class="nv">$ </span>ls dist
+sample-0.0.1.tar.gz
+</pre></div>
+</div>
+</div>
+<div class="section" id="wheel">
+<h2>wheel<a class="headerlink" href="#wheel" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>バイナリパッケージ</li>
+<li><a class="reference external" href="https://www.python.org/dev/peps/pep-0427/">PEP427 The Wheel Binary Package Format 1.0</a></li>
+<li>ビルド済みのパッケージを配布可能。</li>
+<li>デファクトスタンダードな「egg」を「pip」は取り扱わなかった。</li>
+<li>「wheel」はPEP準拠フォーマットなので「pip」も対応。</li>
+<li>直接インストール可能なので、インストール時間の短縮につながる。</li>
+<li>whleelパッケージの作成には「wheel」のインストールが必要です。</li>
+<li>whleelパッケージのインストールには「wheel」は必要ありません。</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip install wheel
+</pre></div>
+</div>
+</div>
+<div class="section" id="id40">
+<h2>wheel<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>パッケージの作成</li>
+<li>対象の環境に応じたパッケージの作成ができる</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python setup.py bdist_wheel
+
+<span class="c"># python3にしか対応しない</span>
+<span class="nv">$ </span>python setup.py bdist_wheel --python-tag<span class="o">=</span>py3
+</pre></div>
+</div>
+</div>
+<div class="section" id="id41">
+<h2>wheel<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Python2と3の両方に対応している場合</li>
+<li>setup.cfgに「universal = 1 」と書いておくと良いです。</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">[</span><span class="n">wheel</span><span class="p">]</span>
+<span class="n">universal</span> <span class="o">=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>python setup bdist_wheel
+<span class="nv">$ </span>ls
+sample-0.0.1-py2.py3-none-any.whl
+</pre></div>
+</div>
+</div>
+<div class="section" id="id42">
+<h2>アップロード<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>いよいよPyPIにアップロード</li>
+<li>アカウント作成</li>
+<li>パッケージの登録</li>
+<li>パッケージのアップロード</li>
+<li>「testpypi.python.org」 の利用</li>
+<li>ドキュメントのアップロード</li>
+</ul>
+</div>
+<div class="section" id="id43">
+<h2>アカウントの作成<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h2>
+<img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/ydjsq6a_.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/ydjsq6a_.png" />
+<p><a class="reference external" href="https://pypi.python.org/pypi?%3Aaction=register_form">https://pypi.python.org/pypi?%3Aaction=register_form</a></p>
+</div>
+<div class="section" id="id44">
+<h2>パッケージの登録<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>setup.py registerで登録</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>./setup.py register
+running register
+running egg_info
+writing tesdat.egg-info/PKG-INFO
+writing top-level names to sample.egg-info/top_level.txt
+writing dependency_links to sample.egg-info/dependency_links.txt
+reading manifest file <span class="s1">&#39;sample.egg-info/SOURCES.txt&#39;</span>
+writing manifest file <span class="s1">&#39;sample.egg-info/SOURCES.txt&#39;</span>
+running check
+We need to know who you are, so please choose either:
+ 1. use your existing login,
+
+...
+
+Registering sample to https://pypi.python.org/pypi
+Server response <span class="o">(</span>200<span class="o">)</span>: OK
+I can store your PyPI login so future submissions will be faster.
+<span class="o">(</span>the login will be stored in /home/tell-k/.pypirc<span class="o">)</span>
+Save your login <span class="o">(</span>y/N<span class="o">)</span>?y
+</pre></div>
+</div>
+</div>
+<div class="section" id="id45">
+<h2>パッケージの登録<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>~/.pypircという設定ファイルが生成されます。</li>
+<li>ここにID/PASSを設定しておけばアップロードする際に毎回聞かれません。</li>
+<li>平文なのであまりおすすめはしません</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>[distutils]
+index-servers =
+   pypi
+
+[pypi]
+username: tell-k
+password: xxxxxxxxxxxx
+</pre></div>
+</div>
+</div>
+<div class="section" id="id46">
+<h2>パッケージのアップロード<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>ビルドコマンドに続けて upload を追加</li>
+<li>ビルドしてそのままアップロードされる</li>
+<li>あとは確認するのみ</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c"># 事前に「setup.py」 の記述内容をチェック</span>
+<span class="nv">$ </span>python setup.py check -r -s
+
+<span class="nv">$ </span>python setup.py sdist bdist_wheel upload
+
+<span class="c"># × uplaod単体では利用できない</span>
+<span class="nv">$ </span>python upload
+running upload
+error: No dist file created in earlier <span class="nb">command</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="twine">
+<h2>Twineでのアップロード(推奨)<a class="headerlink" href="#twine" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://pypi.python.org/pypi/twine">https://pypi.python.org/pypi/twine</a></li>
+<li>PyPAではtwineを利用してのアップロードが推奨されている。</li>
+<li>TLS通信でよりセキュア</li>
+<li>uploadが単体できる -&gt; 何度もビルドしなくて良い。確認が取れたものだけだアップロードできる</li>
+<li>別途インストールが必要</li>
+<li>参考 <a class="reference external" href="https://python-packaging-user-guide.readthedocs.org/en/latest/distributing/#upload-your-distributions">Upload your distributions</a></li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip install twine
+<span class="nv">$ </span>twine uplaod dist/*
+</pre></div>
+</div>
+</div>
+<div class="section" id="testpypi-python-org">
+<h2>testpypi.python.org の利用<a class="headerlink" href="#testpypi-python-org" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>とりあえず試してみたい</li>
+<li><a class="reference external" href="http://testpypi.python.org">http://testpypi.python.org</a> を利用して実験しましょう。</li>
+<li>実験用のpypiで、わかりやすいラベル以外はpypiと一緒</li>
+<li>アカウント作成は <strong>もう一回必要</strong></li>
+</ul>
+<img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/lttwh7en.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/lttwh7en.png" />
+</div>
+<div class="section" id="pypirc">
+<h2>pypircの設定<a class="headerlink" href="#pypirc" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre>[distutils]
+index-servers=
+    pypi
+    pypitest
+
+[pypitest]
+repository = https://testpypi.python.org/pypi
+username = &lt;your user name goes here&gt;
+password = &lt;your password goes here&gt;
+
+[pypi]
+repository = https://pypi.python.org/pypi
+username = &lt;your user name goes here&gt;
+password = &lt;your password goes here&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="testpypi">
+<h2>testpypiへの操作<a class="headerlink" href="#testpypi" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash"><div class="highlight"><pre>パッケージ登録
+<span class="nv">$ </span>python setup.py register -r https://testpypi.python.org/pypi
+
+アップロード
+<span class="nv">$ </span>python setup.py sdist upload -r https://testpypi.python.org/pypi
+
+インストール
+<span class="nv">$ </span>pip install -i https://testpypi.python.org/pypi &lt;package name&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="tips">
+<h2>その他のTips<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>ドキュメントのアップロード</li>
+<li>コマンドラインツール</li>
+<li>Githubのバージョンタグをつける</li>
+<li>Djangoアプリみたいなの</li>
+</ul>
+</div>
+<div class="section" id="id47">
+<h2>ドキュメントのアップロード<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>setup.py と同階層にdocs(Sphinxドキュメント)を用意</li>
+<li>「Sphinx」のインストールが必要です。</li>
+</ul>
+<p>setup.cfg:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">[</span><span class="n">upload_docs</span><span class="p">]</span>
+<span class="n">upload</span><span class="o">-</span><span class="nb">dir</span> <span class="o">=</span> <span class="n">_build</span><span class="o">/</span><span class="n">sphinx</span><span class="o">/</span><span class="n">html</span>
+</pre></div>
+</div>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c"># Sphinxをビルドしてアップロード</span>
+<span class="nv">$ </span>python setup.py build_sphinx upload_docs
+
+<span class="c"># アップロード後はpyhthonhosted.orgのURLで確認できる</span>
+<span class="c"># pypiからリンクが貼られれます</span>
+http://pythonhosted.org/&lt;packge name&gt;/
+</pre></div>
+</div>
+</div>
+<div class="section" id="id48">
+<h2>コマンドラインツール<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>コマンドラインツールを作りたい場合</li>
+<li>setup.pyの「entry_points」に「console_scripts」を指定する</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">entry_points</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s">&quot;console_scripts&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="s">&quot;sayhello=sample.commands:hello&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+
+<span class="c"># sample.commandsモジュールのhello関数を呼び出す</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>インストール時にPythonと同じ実行パスにコマンドを作成してくれる</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nv">$ </span>pip install sample
+
+<span class="nv">$ </span>sayhello
+Hello! my name is hoge.
+
+<span class="nv">$ </span>which sayhello
+/usr/local/bin/sayhello
+</pre></div>
+</div>
+</div>
+<div class="section" id="github">
+<h2>Githubのバージョンタグをつける<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>PyPIが落ちた時や、過去のバージョンをPyPIから削除した場合の保険</li>
+<li>後から利用者が追えるようにGithubにバージョンタグを付けてあげると親切</li>
+</ul>
+<div class="highlight-bash"><div class="highlight"><pre><span class="c"># リリース時点でタグを切る</span>
+<span class="nv">$ </span>git tag -am <span class="s2">&quot;Version 1.0.0&quot;</span> v1.0.0
+<span class="nv">$ </span>git push origin --tags
+</pre></div>
+</div>
+</div>
+<div class="section" id="id49">
+<h2>Githubのバージョンタグをつける<a class="headerlink" href="#id49" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/x9134jfl.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/x9134jfl.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/x9134jfl.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="django">
+<h2>Djangoアプリみたいなの<a class="headerlink" href="#django" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>再利用可能な Djangoアプリ の配布</li>
+<li>公式ドキュメントに書いてあります。</li>
+<li><a class="reference external" href="https://docs.djangoproject.com/en/1.8/intro/reusable-apps/">Advanced tutorial: How to write reusable apps</a></li>
+<li>拡張機能を備えるライブラリや、フレームワークにはそれぞれの流儀があるのでそれに従う方が良いでしょう。</li>
+</ul>
+</div>
+<div class="section" id="id50">
+<h2>便利サービス<a class="headerlink" href="#id50" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id51">
+<h2>便利サービス<a class="headerlink" href="#id51" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Pythonパッケージを運用する上で手助けてくれるサービスを紹介します。</li>
+<li>Travis CI</li>
+<li>Coveralls</li>
+<li>Code Climate</li>
+<li>Read The Docs</li>
+<li>Requires.io</li>
+<li>Shields.io</li>
+</ul>
+</div>
+<div class="section" id="travis-ci">
+<h2>Travis CI<a class="headerlink" href="#travis-ci" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://travis-ci.org/">https://travis-ci.org/</a></li>
+<li>CIサービス</li>
+<li>複数のPythonのバージョンをサポートしている</li>
+<li>「tox」で一気にテストを流すたりすることができます。</li>
+<li>今だと <a class="reference external" href="https://circleci.com/">Circle CI</a> や <a class="reference external" href="http://wercker.com/">Wercker</a> などの選択肢もあります。</li>
+<li>設定ファイル(.travis.yml)を設置します。</li>
+</ul>
+</div>
+<div class="section" id="travis-yml">
+<h2>.travis.yml例<a class="headerlink" href="#travis-yml" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>「tox」を単純に実行するとどのバージョンで落ちたのかわかりづらい</li>
+<li>matrixを使ってTOXENV渡して個別にtoxを動かすとわかりやすくなる。</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>language: python
+python: 3.4
+env:
+  matrix:
+   - TOXENV=py26
+   - TOXENV=py27
+   - TOXENV=py33
+   - TOXENV=py34
+   - TOXENV=pypy
+   - TOXENV=flake8
+install:
+  - pip install tox
+  - if test &quot;$TOXENV&quot; = py34 ; then pip install coveralls ; fi
+script: tox
+after_script:
+  - if test &quot;$TOXENV&quot; = py34 ; then coveralls ; fi
+</pre></div>
+</div>
+<ul class="simple">
+<li>参考: <a class="reference external" href="http://pelican.aodag.jp/tag/travis.html">travisでtoxをつかうtips</a></li>
+</ul>
+</div>
+<div class="section" id="coveralls">
+<h2>Coveralls<a class="headerlink" href="#coveralls" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://coveralls.io">https://coveralls.io</a></li>
+<li>カバレッジを計測してくれるサービスです。</li>
+</ul>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/6n4sok0b.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/6n4sok0b.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/6n4sok0b.png" style="width: 70%;" /></a>
+</div>
+<div class="section" id="id52">
+<h2>Coveralls<a class="headerlink" href="#id52" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>travisでテスト実行後に取ったカバレッジをcoverallsにPOSTしています</li>
+</ul>
+<div class="highlight-python"><div class="highlight"><pre>install:
+  - pip install tox
+  - if test &quot;$TOXENV&quot; = py34 ; then pip install coveralls ; fi
+script: tox
+after_script:
+  - if test &quot;$TOXENV&quot; = py34 ; then coveralls ; fi
+</pre></div>
+</div>
+</div>
+<div class="section" id="code-climate">
+<h2>Code Climate<a class="headerlink" href="#code-climate" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://codeclimate.com">https://codeclimate.com</a></li>
+<li>コードの品質をチェックしてくれます。</li>
+<li>去年までPython未対応でしたが、対応されました。やりましたね。</li>
+<li>リファクタリング本に載ってるような内容を指摘してくれます。</li>
+</ul>
+<img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/phbb_i4h.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/phbb_i4h.png" />
+</div>
+<div class="section" id="id53">
+<h2>Code Climate<a class="headerlink" href="#id53" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/qkkl6cdq.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/qkkl6cdq.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/qkkl6cdq.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="read-the-docs">
+<h2>Read The Docs<a class="headerlink" href="#read-the-docs" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://readthedocs.org/">https://readthedocs.org/</a></li>
+<li>Sphinxドキュメントをホスティングしてくれます。</li>
+<li>PyPIではなくこちらにドキュメントをホスティングするライブラリは多いです</li>
+<li>バージョン管理もしてくれる</li>
+</ul>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/to6rlori.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/to6rlori.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/to6rlori.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="requires-io">
+<h2>Requires.io<a class="headerlink" href="#requires-io" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://requires.io/">https://requires.io/</a></li>
+<li>依存パッケージの更新チェックをしてくれます。</li>
+<li>「setup.py」 だけではなく 「requirements.txt」 や 「tox.ini」 なども同時にチェックしてくれます。</li>
+</ul>
+</div>
+<div class="section" id="id54">
+<h2>Requires.io<a class="headerlink" href="#id54" title="Permalink to this headline">¶</a></h2>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/vvbm341_.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/vvbm341_.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/vvbm341_.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="sheilds-io">
+<h2>Sheilds.io<a class="headerlink" href="#sheilds-io" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://shields.io/">http://shields.io/</a></li>
+<li>PyPIのみならずいろんなバッジを用意してくれる。</li>
+<li>パッケージのメタデータを読み取ってくれる。</li>
+</ul>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/d1iqgbwa.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/d1iqgbwa.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/d1iqgbwa.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="id55">
+<h2>トラブルシューティング<a class="headerlink" href="#id55" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id56">
+<h2>トラブルシューティング<a class="headerlink" href="#id56" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>まちがってアップロードした!</li>
+<li>一度消したらバージョン番号が再利用できない!</li>
+<li>説明文(reST)がちゃんとレンダリングされてない!</li>
+</ul>
+</div>
+<div class="section" id="id57">
+<h2>まちがってアップロードした!<a class="headerlink" href="#id57" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>PyPiの管理画面から削除できることができます。</li>
+</ul>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/by6w58ku.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/by6w58ku.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/by6w58ku.png" style="width: 80%;" /></a>
+</div>
+<div class="section" id="id58">
+<h2>一度消したら同じバージョン番号が使えない！<a class="headerlink" href="#id58" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>そういう仕様らしいです。。。</li>
+<li>諦めましょう。別のバージョン番号をつけるとかにしましょう。</li>
+</ul>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/oibkxoxp.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/oibkxoxp.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/oibkxoxp.png" style="width: 30%;" /></a>
+</div>
+<div class="section" id="id59">
+<h2>説明文がレンダリングされていない!<a class="headerlink" href="#id59" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>reSTとしてうまく認識されてないケース</li>
+<li>直さずに放置されていると残念。</li>
+<li>PyPiの管理画面から更新できます。</li>
+</ul>
+<a class="reference internal image-reference" href="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/0-myl_qn.png"><img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/0-myl_qn.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/0-myl_qn.png" style="width: 50%;" /></a>
+</div>
+<div class="section" id="id60">
+<h2>今日話さなかった事<a class="headerlink" href="#id60" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>C拡張を伴うようなパッケージ</li>
+<li>インストーラーを伴うようなパッケージ</li>
+<li>クローズドな環境でのPythonパッケージの活用</li>
+</ul>
+</div>
+<div class="section" id="url">
+<h2>参考URL<a class="headerlink" href="#url" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Python Packaging Authority</dt>
+<dd><a class="reference external" href="https://www.pypa.io/en/latest/">https://www.pypa.io/en/latest/</a></dd>
+<dt>PEP Summaries</dt>
+<dd><a class="reference external" href="https://www.pypa.io/en/latest/peps/">https://www.pypa.io/en/latest/peps/</a></dd>
+<dt>Python Packaging User Guide</dt>
+<dd><a class="reference external" href="https://python-packaging-user-guide.readthedocs.org/en/latest/">https://python-packaging-user-guide.readthedocs.org/en/latest/</a></dd>
+<dt>vinta/awesome-python</dt>
+<dd><a class="reference external" href="https://github.com/vinta/awesome-python">https://github.com/vinta/awesome-python</a></dd>
+<dt>PyPIデビュー</dt>
+<dd><a class="reference external" href="http://www.freia.jp/taka/docs/pyhack4/pypi/">http://www.freia.jp/taka/docs/pyhack4/pypi/</a></dd>
+<dt>PyPIデビュー</dt>
+<dd><a class="reference external" href="http://note.crohaco.net/2014/pypi-debut/">http://note.crohaco.net/2014/pypi-debut/</a></dd>
+</dl>
+</div>
+<div class="section" id="id61">
+<h2>参考URL<a class="headerlink" href="#id61" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>PyPIにパッケージ登録する</dt>
+<dd><a class="reference external" href="http://qiita.com/edvakf&#64;github/items/d82cd7ab77ea2b88506c">http://qiita.com/edvakf&#64;github/items/d82cd7ab77ea2b88506c</a></dd>
+<dt>How To Package Your Python Code</dt>
+<dd><a class="reference external" href="http://python-packaging.readthedocs.org/en/latest/index.html">http://python-packaging.readthedocs.org/en/latest/index.html</a></dd>
+<dt>Sharing Your Labor of Love: PyPI Quick and Dirty</dt>
+<dd><a class="reference external" href="https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/">https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/</a></dd>
+<dt>Python: PyPIにパッケージをアップロードする最新の推奨な方法</dt>
+<dd><a class="reference external" href="http://elicon.blog57.fc2.com/blog-entry-422.html">http://elicon.blog57.fc2.com/blog-entry-422.html</a></dd>
+<dt>Windows での Python 2.7/3.4 の拡張モジュールビルド環境</dt>
+<dd><a class="reference external" href="http://qiita.com/methane/items/2210712763b91e75fdf0">http://qiita.com/methane/items/2210712763b91e75fdf0</a></dd>
+<dt>パッケージングの今</dt>
+<dd><a class="reference external" href="http://www.slideshare.net/aodag/ss-39068785">http://www.slideshare.net/aodag/ss-39068785</a></dd>
+<dt>パッケージングの今と未来</dt>
+<dd><a class="reference external" href="http://www.slideshare.net/aodag/ss-26183017">http://www.slideshare.net/aodag/ss-26183017</a></dd>
+</dl>
+</div>
+<div class="section" id="id62">
+<h2>まとめ<a class="headerlink" href="#id62" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>長々と書きましたが、全てを最初からやる必要はありません。</li>
+<li>PyPI にデビューすれば、パッケージンングについて自然と学び始められます。</li>
+<li>testpypi を利用すれば、誰に迷惑をかけることなく何度も試せます。</li>
+<li>是非試しみてください。</li>
+</ul>
+<img alt="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/m4naltmy.png" src="https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/m4naltmy.png" />
+</div>
+<div class="section" id="special-thanks">
+<h2>Special Thanks<a class="headerlink" href="#special-thanks" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>突然のレビュー依頼にも関わらず、快くご対応くださりありがとうございます。</li>
+<li>&#64;shimizukawa 氏</li>
+<li>&#64;crohcao 氏</li>
+<li>参考資料の作者の皆様</li>
+</ul>
+</div>
+<div class="section" id="id63">
+<h2>ご静聴ありがとうとございました<a class="headerlink" href="#id63" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+  </body>
+  <script type="text/javascript">
+  <!--
+  $(document).ready(function(){
+    $("body > div.section").each(function(i, e){
+      var target = null;
+      var addElements = [];
+      for (var i=0; i < e.children.length; i++) {
+        target = $(e.children[i]);
+        if (target.hasClass('section') || target.hasClass('slide-area')) {
+          continue;
+        }
+        addElements.push(target);
+      }
+      var ele = $(document.createElement('div'));
+      ele = ele.addClass("section");
+      for (var j=0; j < addElements.length; j++) {
+        ele.append(addElements[j]);
+      }
+      ele.prependTo("body > div.section");
+    });
+    $("body > div.section >  div.section").each(function(i, e){
+       if(e.children.length == 1) {
+          $(e.firstElementChild).addClass("special");
+       }
+       $("a.headerlink").hide();
+    });
+  });
+  // -->
+  </script>
+  <script src='_static/js/slides.js'></script>
+  <!--
+  <script src='/_static/js/play.js'></script>
+  -->
+</html>
