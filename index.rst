@@ -118,7 +118,7 @@ Pythonパッケージ作成
 
 .. code-block:: python
 
-  from setuptools import setup
+  from setuptools import setup, find_packages
 
   setup(
       name='sample',
@@ -816,8 +816,8 @@ wheel
 * デファクトスタンダードな「egg」を「pip」は取り扱わなかった。
 * 「wheel」はPEP準拠フォーマットなので「pip」も対応。
 * 直接インストール可能なので、インストール時間の短縮につながる。
-* whleelパッケージの作成には「wheel」のインストールが必要です。
-* whleelパッケージのインストールには「wheel」は必要ありません。
+* wheelパッケージの作成には「wheel」のインストールが必要です。
+* wheelパッケージのインストールには「wheel」は必要ありません。
 
 .. code-block:: bash
 
@@ -1313,7 +1313,7 @@ Special Thanks
 
 * 突然のレビュー依頼にも関わらず、快くご対応くださりありがとうございます。
 * @shimizukawa 氏
-* @crohcao 氏 
+* @crohaco 氏 
 * 参考資料の作者の皆様
 
 ご静聴ありがとうとございました
