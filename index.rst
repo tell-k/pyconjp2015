@@ -991,6 +991,9 @@ testpypiへの操作
 
  インストール
  $ pip install -i https://testpypi.python.org/pypi <package name>
+ 
+ 依存パッケージがあるようのものは「--extra-index-url」を利用すると良い
+ $ pip install --extra-index-url https://testpypi.python.org/pypi <package name>
 
 
 その他のTips
