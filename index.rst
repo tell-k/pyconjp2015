@@ -9,7 +9,7 @@ PyPIデビュー2015
 =====================================
 
 .. image:: https://avatars3.githubusercontent.com/u/26263?v=3&s=150
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/vxjmiemo.png
+.. image:: _static/images/vxjmiemo.png
 
 * tell-k
 * BeProud.inc
@@ -47,7 +47,7 @@ PyPIデビュー2015
 
 * ぶっちゃけ調べるのがだるいので、まとめておいて欲しい人
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/ljj0l-e4.png
+.. image:: _static/images/ljj0l-e4.png
    :width: 70%
 
 Pythonプロフェッショナルプログラミング 第2版
@@ -72,7 +72,7 @@ Pythonプロフェッショナルプログラミング 第2版
 PyPIとは？
 =====================================
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/3x4hkmn6.png
+.. image:: _static/images/3x4hkmn6.png
    :width: 80%
 
 PyPiとは？
@@ -86,7 +86,7 @@ PyPiとは？
 PyPAとは？
 =====================================
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/zli4wet3.png
+.. image:: _static/images/zli4wet3.png
    :width: 80%
 
 PyPAとは？
@@ -145,7 +145,7 @@ Pythonパッケージ作成
 そういうわけにもいきますまい...
 =====================================
 
-.. figure:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/wuuz3mx_.png
+.. figure:: _static/images/wuuz3mx_.png
    :width: 70%
 
 Pythonパッケージ作成
@@ -340,7 +340,7 @@ long_description
 * `reStructuredText <http://docutils.sourceforge.net/rst.html>`_ に対応。綺麗に整形される
 * Markdownに対応してません。
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/m5j2qspj.png
+.. image:: _static/images/m5j2qspj.png
 
 long_description
 =====================================
@@ -473,7 +473,7 @@ install_requiresにこれ使えば？
 とてもつらい
 =========================================
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/p1fcoye0.png
+.. image:: _static/images/p1fcoye0.png
    :width: 40%
 
 install_requires の 役割
@@ -755,7 +755,7 @@ coverage
 
  $ python setup.py test -a "--cov sample --cov-report term-missing"
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/s8kwn9ff.png
+.. image:: _static/images/s8kwn9ff.png
 
 
 配布物を決める
@@ -867,7 +867,7 @@ wheel
 アカウントの作成
 ==================================
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/ydjsq6a_.png
+.. image:: _static/images/ydjsq6a_.png
 https://pypi.python.org/pypi?%3Aaction=register_form
 
 パッケージの登録
@@ -956,7 +956,7 @@ testpypi.python.org の利用
 * 実験用のpypiで、わかりやすいラベル以外はpypiと一緒
 * アカウント作成は **もう一回必要**
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/lttwh7en.png
+.. image:: _static/images/lttwh7en.png
 
 pypircの設定
 ==================================
@@ -1069,7 +1069,7 @@ Githubのバージョンタグをつける
 Githubのバージョンタグをつける
 =====================================
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/x9134jfl.png
+.. image:: _static/images/x9134jfl.png
    :width: 80%
 
 Djangoアプリみたいなの
@@ -1140,7 +1140,7 @@ Coveralls
 * https://coveralls.io
 * カバレッジを計測してくれるサービスです。
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/6n4sok0b.png
+.. image:: _static/images/6n4sok0b.png
    :width: 70%
 
 Coveralls
@@ -1166,13 +1166,13 @@ Code Climate
 * 去年までPython未対応でしたが、対応されました。やりましたね。
 * リファクタリング本に載ってるような内容を指摘してくれます。
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/phbb_i4h.png
+.. image:: _static/images/phbb_i4h.png
    
 
 Code Climate
 =====================================
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/qkkl6cdq.png
+.. image:: _static/images/qkkl6cdq.png
    :width: 80%
 
 Read The Docs
@@ -1183,7 +1183,7 @@ Read The Docs
 * PyPIではなくこちらにドキュメントをホスティングするライブラリは多いです
 * バージョン管理もしてくれる
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/to6rlori.png
+.. image:: _static/images/to6rlori.png
    :width: 80%
 
 Requires.io
@@ -1196,7 +1196,7 @@ Requires.io
 Requires.io
 =====================================
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/vvbm341_.png
+.. image:: _static/images/vvbm341_.png
    :width: 80%
 
 Sheilds.io
@@ -1206,7 +1206,7 @@ Sheilds.io
 * PyPIのみならずいろんなバッジを用意してくれる。
 * パッケージのメタデータを読み取ってくれる。
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/d1iqgbwa.png
+.. image:: _static/images/d1iqgbwa.png
    :width: 80%
 
 トラブルシューティング
@@ -1224,7 +1224,7 @@ Sheilds.io
 
 * PyPiの管理画面から削除できることができます。
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/by6w58ku.png
+.. image:: _static/images/by6w58ku.png
    :width: 80%
 
 一度消したら同じバージョン番号が使えない！
@@ -1233,7 +1233,7 @@ Sheilds.io
 * そういう仕様らしいです。。。
 * 諦めましょう。別のバージョン番号をつけるとかにしましょう。
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/oibkxoxp.png
+.. image:: _static/images/oibkxoxp.png
    :width: 30%
 
 説明文がレンダリングされていない!
@@ -1243,7 +1243,7 @@ Sheilds.io
 * 直さずに放置されていると残念。
 * PyPiの管理画面から更新できます。
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/0-myl_qn.png
+.. image:: _static/images/0-myl_qn.png
    :width: 50%
 
 
@@ -1308,7 +1308,7 @@ Windows での Python 2.7/3.4 の拡張モジュールビルド環境
 * testpypi を利用すれば、誰に迷惑をかけることなく何度も試せます。
 * 是非試しみてください。
 
-.. image:: https://dl.dropboxusercontent.com/spa/ghyn87yb4ejn5yy/m4naltmy.png
+.. image:: _static/images/m4naltmy.png
 
 
 Special Thanks
