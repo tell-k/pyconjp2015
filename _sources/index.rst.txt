@@ -868,6 +868,7 @@ wheel
 ==================================
 
 .. image:: _static/images/ydjsq6a_.png
+
 https://pypi.python.org/pypi?%3Aaction=register_form
 
 パッケージの登録

@@ -128,7 +128,7 @@
 <li>setuptools … パッケージングするための必須ツール</li>
 <li>setup.py … パッケージのメタデータを記載</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">find_packages</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">setup</span><span class="p">,</span> <span class="n">find_packages</span>
 
 <span class="n">setup</span><span class="p">(</span>
     <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sample&#39;</span><span class="p">,</span>
@@ -141,7 +141,7 @@
 </div>
 <div class="section" id="id10">
 <h2>3. パッケージ登録<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># パッケージ登録</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># パッケージ登録</span>
 $ python setup.py register
 <span class="c1"># 指示に従って入力</span>
 
@@ -170,7 +170,7 @@ $ python setup.py sdist upload
 <div class="section" id="id13">
 <h2>構成<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <p>例えば「sample」というパッケージを妄想する</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>sample
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sample
   ├── MANIFEST.in
   ├── README.rst
   ├── sample        &lt;- Pythonパッケージ
@@ -224,7 +224,7 @@ $ python setup.py sdist upload
 </div>
 <div class="section" id="id17">
 <h2>setup.pyの例<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="p">(</span>
     <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sample&#39;</span><span class="p">,</span>
     <span class="n">version</span><span class="o">=</span><span class="s1">&#39;1.0.0&#39;</span><span class="p">,</span>
     <span class="n">description</span><span class="o">=</span><span class="s1">&#39;A sample Python project&#39;</span><span class="p">,</span>
@@ -262,7 +262,7 @@ $ python setup.py sdist upload
 <ul class="simple">
 <li>Frameworkの細かいバージョン指定</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Framework</span> <span class="p">::</span> <span class="n">Django</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Framework</span> <span class="p">::</span> <span class="n">Django</span>
 <span class="n">Framework</span> <span class="p">::</span> <span class="n">Django</span> <span class="p">::</span> <span class="mf">1.4</span>
 <span class="n">Framework</span> <span class="p">::</span> <span class="n">Django</span> <span class="p">::</span> <span class="mf">1.5</span>
 <span class="n">Framework</span> <span class="p">::</span> <span class="n">Django</span> <span class="p">::</span> <span class="mf">1.6</span>
@@ -273,7 +273,7 @@ $ python setup.py sdist upload
 <ul class="simple">
 <li>開発ステータス</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Development</span> <span class="n">Status</span> <span class="p">::</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Planning</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Development</span> <span class="n">Status</span> <span class="p">::</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">Planning</span>
 <span class="n">Development</span> <span class="n">Status</span> <span class="p">::</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">Pre</span><span class="o">-</span><span class="n">Alpha</span>
 <span class="n">Development</span> <span class="n">Status</span> <span class="p">::</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">Alpha</span>
 <span class="n">Development</span> <span class="n">Status</span> <span class="p">::</span> <span class="mi">4</span> <span class="o">-</span> <span class="n">Beta</span>
@@ -289,7 +289,7 @@ $ python setup.py sdist upload
 <li><a class="reference external" href="https://www.pypa.io/en/latest/peps/#pep440s">PEP440 Version Identification and Dependency Specification</a></li>
 <li>バージョン番号のつけ方についてのPEP</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="mf">1.2</span><span class="o">.</span><span class="mf">0.</span><span class="n">dev1</span>  <span class="c1"># Development release</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.2</span><span class="o">.</span><span class="mf">0.</span><span class="n">dev1</span>  <span class="c1"># Development release</span>
 <span class="mf">1.2</span><span class="o">.</span><span class="mi">0</span><span class="n">a1</span>     <span class="c1"># Alpha Release</span>
 <span class="mf">1.2</span><span class="o">.</span><span class="mb">0b1</span>     <span class="c1"># Beta Release</span>
 <span class="mf">1.2</span><span class="o">.</span><span class="mi">0</span><span class="n">rc1</span>    <span class="c1"># Release Candidate</span>
@@ -306,7 +306,7 @@ $ python setup.py sdist upload
 <li>PyPAのガイドでは、 <a class="reference external" href="http://semver.org/lang/ja/">Sematic Versioning</a>  も推奨</li>
 <li><strong>メジャー.マイナー.パッチ</strong> の3つからなるバージョン番号。例 <strong>1.2.0</strong></li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span>バージョンナンバーは、メジャー.マイナー.パッチとし、バージョンを上げるには、
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>バージョンナンバーは、メジャー.マイナー.パッチとし、バージョンを上げるには、
 
 - APIの変更に互換性のない場合はメジャーバージョンを、
 - 後方互換性があり機能性を追加した場合はマイナーバージョンを、
@@ -324,7 +324,7 @@ $ python setup.py sdist upload
 <li>「setup.py」やソースコードなど、あちこちにバージョン番号を書くと更新を忘れたりします。</li>
 <li>ソースコードの一箇所に書いて、それを「setup.py」から参照する。</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">find_version</span><span class="p">(</span><span class="o">*</span><span class="n">file_paths</span><span class="p">):</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">find_version</span><span class="p">(</span><span class="o">*</span><span class="n">file_paths</span><span class="p">):</span>
     <span class="n">version_file</span> <span class="o">=</span> <span class="n">read</span><span class="p">(</span><span class="o">*</span><span class="n">file_paths</span><span class="p">)</span>
     <span class="n">version_match</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;^__version__ = [&#39;</span><span class="se">\&quot;</span><span class="s2">]([^&#39;</span><span class="se">\&quot;</span><span class="s2">]*)[&#39;</span><span class="se">\&quot;</span><span class="s2">]&quot;</span><span class="p">,</span>
                               <span class="n">version_file</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">M</span><span class="p">)</span>
@@ -355,7 +355,7 @@ $ python setup.py sdist upload
 <ul class="simple">
 <li>README.rst のファイルの中身を setup に渡す</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">here</span><span class="p">,</span> <span class="s1">&#39;README.rst&#39;</span><span class="p">),</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">here</span><span class="p">,</span> <span class="s1">&#39;README.rst&#39;</span><span class="p">),</span> <span class="n">encoding</span><span class="o">=</span><span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="n">long_description</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
 
  <span class="n">setup</span><span class="p">(</span>
@@ -374,7 +374,7 @@ $ python setup.py sdist upload
 <li>「setuptools」に「find_packages」という便利関数があります。</li>
 <li>プロジェクト内から適当にPythonパッケージを探してくれる</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">find_packages</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">setuptools</span> <span class="kn">import</span> <span class="n">find_packages</span>
 
 <span class="n">setup</span><span class="p">(</span>
    <span class="o">...</span>
@@ -391,14 +391,14 @@ $ python setup.py sdist upload
 <li>テストコードは、ライブラリ利用時には不要。</li>
 <li>除外しない場合、そのままトップレベルにインストールされてしまう。</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># × 除外しない</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># × 除外しない</span>
 <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">()</span>
 
 <span class="c1"># ○ 除外する</span>
 <span class="n">packages</span><span class="o">=</span><span class="n">find_packages</span><span class="p">(</span><span class="n">exclude</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;tests*&#39;</span><span class="p">])</span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># 除外しなかった場合</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># 除外しなかった場合</span>
 <span class="kn">import</span> <span class="nn">sample</span>
 <span class="kn">import</span> <span class="nn">tests.test_sample</span>  <span class="c1"># トップレベルでテストコードがインストールされてしまう</span>
 </pre></div>
@@ -410,7 +410,7 @@ $ python setup.py sdist upload
 <li>依存パッケージ</li>
 <li>「pip install」時に一緒にインストールしてくれる</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="p">(</span>
    <span class="o">...</span>
    <span class="n">install_requires</span><span class="o">=</span><span class="p">[</span>
       <span class="s1">&#39;Hoge&#39;</span><span class="p">,</span>
@@ -426,13 +426,13 @@ $ python setup.py sdist upload
 <li>「pip freeze」</li>
 <li>インストールされているPythonパッケージを一覧で出してくれる。</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip freeze &gt; requirements.txt
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip freeze &gt; requirements.txt
 </pre></div>
 </div>
 <ul class="simple">
 <li>requirements.txt</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># インストール済みパッケージの一覧を出してくれる</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># インストール済みパッケージの一覧を出してくれる</span>
 <span class="c1"># バージョンを固定</span>
 <span class="n">Spam</span><span class="o">==</span><span class="mf">1.0</span><span class="o">.</span><span class="mi">0</span>
 <span class="n">Ham</span><span class="o">==</span><span class="mf">2.1</span><span class="o">.</span><span class="mi">0</span>
@@ -446,7 +446,7 @@ $ python setup.py sdist upload
 <li>一見問題なさそうに見える方法</li>
 <li>依存パッケージは、バージョン固定でインストールされる</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;requiments.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;requiments.txt&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fp</span><span class="p">:</span>
        <span class="n">requires</span> <span class="o">=</span> <span class="n">fp</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
 
 <span class="n">install_requires</span><span class="o">=</span><span class="n">requires</span>
@@ -455,7 +455,7 @@ $ python setup.py sdist upload
 </div>
 <div class="section" id="id24">
 <h2>バージョン固定されると単純に困る<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip install Spam
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install Spam
 $ pip freeze <span class="p">|</span> grep Spam
 <span class="nv">Spam</span><span class="o">==</span><span class="m">1</span>.1.0
 <span class="c1"># =&gt; Spamの最新版 1.1.0 が インストール</span>
@@ -487,7 +487,7 @@ $ pip freeze <span class="p">|</span> grep Spam
 <li>「install_requires」は、最低限必要なバージョンを記載する程度に留めましょう</li>
 <li>バージョンを指定する場合はドキュメントやREADMEに記載があると親切</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># そもそもバージョンを指定しない</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># そもそもバージョンを指定しない</span>
 <span class="n">install_requires</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Ham&#39;</span><span class="p">]</span>
 
 <span class="c1"># 最低限必要なバージョンだけを記載</span>
@@ -532,7 +532,7 @@ $ pip freeze <span class="p">|</span> grep Spam
 </ul>
 </li>
 <li><p class="first">__future__ で Py3 の機能を利用する</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span><span class="p">,</span> <span class="n">print_function</span><span class="p">,</span> <span class="n">absolute_import</span><span class="p">,</span> <span class="n">unicode_literals</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="kn">import</span> <span class="n">division</span><span class="p">,</span> <span class="n">print_function</span><span class="p">,</span> <span class="n">absolute_import</span><span class="p">,</span> <span class="n">unicode_literals</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -548,7 +548,7 @@ $ pip freeze <span class="p">|</span> grep Spam
 </div>
 <div class="section" id="id29">
 <h2>sixの例<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">six</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">six</span>
 
 <span class="n">d</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;hoge1&#39;</span><span class="p">:</span> <span class="s1">&#39;fuga&#39;</span><span class="p">,</span> <span class="s1">&#39;hoge2&#39;</span><span class="p">:</span> <span class="s1">&#39;fuga&#39;</span><span class="p">,</span> <span class="p">}</span>
 
@@ -590,7 +590,7 @@ $ pip freeze <span class="p">|</span> grep Spam
 </div>
 <div class="section" id="id33">
 <h2>開発モード<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip install -e .
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install -e .
 
 <span class="c1"># そのまま動作確認可能</span>
 $ python
@@ -619,7 +619,7 @@ Call your main application code here
 <li>パッケージオーナーにはおなじみ</li>
 <li>pipでインストールして設定ファイル(tox.ini)を作るだけ使えます。</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip install tox
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install tox
 </pre></div>
 </div>
 </div>
@@ -628,7 +628,7 @@ Call your main application code here
 <ul class="simple">
 <li>処理系のインストールは事前に必要です</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">tox</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">tox</span><span class="p">]</span>
 <span class="n">envlist</span><span class="o">=</span><span class="n">py27</span><span class="p">,</span><span class="n">py34</span><span class="p">,</span><span class="n">py35</span><span class="p">,</span><span class="n">pypy</span>
 
 <span class="p">[</span><span class="n">testenv</span><span class="p">]</span>
@@ -636,7 +636,7 @@ Call your main application code here
     <span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">test</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># 全バージョンでテストを実行</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 全バージョンでテストを実行</span>
 $ tox
 
 <span class="c1"># バージョンを指定してテスト実行</span>
@@ -667,7 +667,7 @@ $ tox -e py35
 </div>
 <div class="section" id="assert">
 <h2>assertが賢くなる例<a class="headerlink" href="#assert" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ py.test test_assert.py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ py.test test_assert.py
 
 ...
 
@@ -707,7 +707,7 @@ E         ?
 <ul class="simple">
 <li>setup.py でtestコマンドをカスタマイズできます。</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span>
 
 <span class="kn">from</span> <span class="nn">setuptools.command.test</span> <span class="kn">import</span> <span class="n">test</span> <span class="k">as</span> <span class="n">TestCommand</span>
 
@@ -736,7 +736,7 @@ E         ?
 <ul class="simple">
 <li>cmdclassを活用するとテスト以外のコマンドも追加できたりします。便利ですね。</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="p">(</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">setup</span><span class="p">(</span>
     <span class="o">...</span>
     <span class="n">tests_require</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;pytest&#39;</span><span class="p">],</span>
     <span class="n">cmdclass</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;test&#39;</span><span class="p">:</span> <span class="n">PyTest</span><span class="p">},</span>
@@ -744,7 +744,7 @@ E         ?
     <span class="p">)</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># py.testが実行される</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># py.testが実行される</span>
 $ python setup.py <span class="nb">test</span>
 </pre></div>
 </div>
@@ -755,7 +755,7 @@ $ python setup.py <span class="nb">test</span>
 <li>pytestからcoverage取れるpytest-covというプラグラインがある</li>
 <li>“–cov-report term-missing” がおすすめ。テストが通ってない行番号を教えてくれる</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span>$ python setup.py test -a &quot;--cov sample --cov-report term-missing&quot;
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python setup.py test -a &quot;--cov sample --cov-report term-missing&quot;
 </pre></div>
 </div>
 <img alt="_images/s8kwn9ff.png" src="_images/s8kwn9ff.png" />
@@ -779,7 +779,7 @@ $ python setup.py <span class="nb">test</span>
 <li>sdist(ソースディストリビューション)に一緒に追加したいファイルを定義するファイル</li>
 <li>ビルドコマンドを叩くとこれに従って配布パッケージを生成してくれる</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">include</span> <span class="n">README</span><span class="o">.</span><span class="n">rst</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">include</span> <span class="n">README</span><span class="o">.</span><span class="n">rst</span>
 <span class="n">include</span> <span class="n">tox</span><span class="o">.</span><span class="n">ini</span>
 <span class="n">include</span> <span class="n">setup</span><span class="o">.</span><span class="n">cfg</span>
 <span class="n">recursive</span><span class="o">-</span><span class="n">include</span> <span class="n">docs</span> <span class="o">*</span>
@@ -802,7 +802,7 @@ $ python setup.py <span class="nb">test</span>
 <li>ソースディストリビューション</li>
 <li>MANIFEST.in に従って配布内容をで固めてくれる</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># ビルド</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># ビルド</span>
 $ python setup.py sdist
 
 <span class="c1"># 直下のdistにsdistが生成されます</span>
@@ -823,7 +823,7 @@ sample-0.0.1.tar.gz
 <li>wheelパッケージの作成には「wheel」のインストールが必要です。</li>
 <li>wheelパッケージのインストールには「wheel」は必要ありません。</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip install wheel
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install wheel
 </pre></div>
 </div>
 </div>
@@ -833,7 +833,7 @@ sample-0.0.1.tar.gz
 <li>パッケージの作成</li>
 <li>対象の環境に応じたパッケージの作成ができる</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ python setup.py bdist_wheel
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python setup.py bdist_wheel
 
 <span class="c1"># python3にしか対応しない</span>
 $ python setup.py bdist_wheel --python-tag<span class="o">=</span>py3
@@ -846,11 +846,11 @@ $ python setup.py bdist_wheel --python-tag<span class="o">=</span>py3
 <li>Python2と3の両方に対応している場合</li>
 <li>setup.cfgに「universal = 1 」と書いておくと良いです。</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">wheel</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">wheel</span><span class="p">]</span>
 <span class="n">universal</span> <span class="o">=</span> <span class="mi">1</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ python setup bdist_wheel
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ python setup bdist_wheel
 $ ls
 sample-0.0.1-py2.py3-none-any.whl
 </pre></div>
@@ -877,7 +877,7 @@ sample-0.0.1-py2.py3-none-any.whl
 <ul class="simple">
 <li>setup.py registerで登録</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ ./setup.py register
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ ./setup.py register
 running register
 running egg_info
 writing tesdat.egg-info/PKG-INFO
@@ -906,7 +906,7 @@ Save your login <span class="o">(</span>y/N<span class="o">)</span>?y
 <li>ここにID/PASSを設定しておけばアップロードする際に毎回聞かれません。</li>
 <li>平文なのであまりおすすめはしません</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">distutils</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">distutils</span><span class="p">]</span>
 <span class="n">index</span><span class="o">-</span><span class="n">servers</span> <span class="o">=</span>
    <span class="n">pypi</span>
 
@@ -923,7 +923,7 @@ Save your login <span class="o">(</span>y/N<span class="o">)</span>?y
 <li>ビルドしてそのままアップロードされる</li>
 <li>あとは確認するのみ</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># 事前に「setup.py」 の記述内容をチェック</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># 事前に「setup.py」 の記述内容をチェック</span>
 $ python setup.py check -r -s
 
 $ python setup.py sdist bdist_wheel upload
@@ -945,7 +945,7 @@ error: No dist file created in earlier <span class="nb">command</span>
 <li>別途インストールが必要</li>
 <li>参考 <a class="reference external" href="https://python-packaging-user-guide.readthedocs.org/en/latest/distributing/#upload-your-distributions">Upload your distributions</a></li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip install twine
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install twine
 $ twine uplaod dist/*
 </pre></div>
 </div>
@@ -962,7 +962,7 @@ $ twine uplaod dist/*
 </div>
 <div class="section" id="pypirc">
 <h2>pypircの設定<a class="headerlink" href="#pypirc" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">distutils</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">distutils</span><span class="p">]</span>
 <span class="n">index</span><span class="o">-</span><span class="n">servers</span><span class="o">=</span>
     <span class="n">pypi</span>
     <span class="n">pypitest</span>
@@ -981,7 +981,7 @@ $ twine uplaod dist/*
 </div>
 <div class="section" id="testpypi">
 <h2>testpypiへの操作<a class="headerlink" href="#testpypi" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>パッケージ登録
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>パッケージ登録
 $ python setup.py register -r https://testpypi.python.org/pypi
 
 アップロード
@@ -1011,11 +1011,11 @@ $ pip install --extra-index-url https://testpypi.python.org/pypi &lt;package nam
 <li>「Sphinx」のインストールが必要です。</li>
 </ul>
 <p>setup.cfg:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">upload_docs</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">upload_docs</span><span class="p">]</span>
 <span class="n">upload</span><span class="o">-</span><span class="nb">dir</span> <span class="o">=</span> <span class="n">_build</span><span class="o">/</span><span class="n">sphinx</span><span class="o">/</span><span class="n">html</span>
 </pre></div>
 </div>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># Sphinxをビルドしてアップロード</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Sphinxをビルドしてアップロード</span>
 $ python setup.py build_sphinx upload_docs
 
 <span class="c1"># アップロード後はpyhthonhosted.orgのURLで確認できる</span>
@@ -1030,7 +1030,7 @@ http://pythonhosted.org/&lt;packge name&gt;/
 <li>コマンドラインツールを作りたい場合</li>
 <li>setup.pyの「entry_points」に「console_scripts」を指定する</li>
 </ul>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">entry_points</span> <span class="o">=</span> <span class="p">{</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">entry_points</span> <span class="o">=</span> <span class="p">{</span>
     <span class="s2">&quot;console_scripts&quot;</span><span class="p">:</span> <span class="p">[</span>
         <span class="s2">&quot;sayhello=sample.commands:hello&quot;</span><span class="p">,</span>
     <span class="p">]</span>
@@ -1042,7 +1042,7 @@ http://pythonhosted.org/&lt;packge name&gt;/
 <ul class="simple">
 <li>インストール時にPythonと同じ実行パスにコマンドを作成してくれる</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>$ pip install sample
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install sample
 
 $ sayhello
 Hello! my name is hoge.
@@ -1058,7 +1058,7 @@ $ which sayhello
 <li>PyPIが落ちた時や、過去のバージョンをPyPIから削除した場合の保険</li>
 <li>後から利用者が追えるようにGithubにバージョンタグを付けてあげると親切</li>
 </ul>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="c1"># リリース時点でタグを切る</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># リリース時点でタグを切る</span>
 $ git tag -am <span class="s2">&quot;Version 1.0.0&quot;</span> v1.0.0
 $ git push origin --tags
 </pre></div>
@@ -1109,7 +1109,7 @@ $ git push origin --tags
 <li>「tox」を単純に実行するとどのバージョンで落ちたのかわかりづらい</li>
 <li>matrixを使ってTOXENV渡して個別にtoxを動かすとわかりやすくなる。</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">language</span><span class="p">:</span> <span class="n">python</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">language</span><span class="p">:</span> <span class="n">python</span>
 <span class="n">python</span><span class="p">:</span> <span class="mf">3.4</span>
 <span class="n">env</span><span class="p">:</span>
   <span class="n">matrix</span><span class="p">:</span>
@@ -1144,7 +1144,7 @@ $ git push origin --tags
 <ul class="simple">
 <li>travisでテスト実行後に取ったカバレッジをcoverallsにPOSTしています</li>
 </ul>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">install</span><span class="p">:</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="p">:</span>
   <span class="o">-</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">tox</span>
   <span class="o">-</span> <span class="k">if</span> <span class="n">test</span> <span class="s2">&quot;$TOXENV&quot;</span> <span class="o">=</span> <span class="n">py34</span> <span class="p">;</span> <span class="n">then</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">coveralls</span> <span class="p">;</span> <span class="n">fi</span>
 <span class="n">script</span><span class="p">:</span> <span class="n">tox</span>
