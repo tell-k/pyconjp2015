@@ -190,3 +190,13 @@ pseudoxml:
 	$(SPHINXBUILD) -b pseudoxml $(ALLSPHINXOPTS) $(BUILDDIR)/pseudoxml
 	@echo
 	@echo "Build finished. The pseudo-XML files are in $(BUILDDIR)/pseudoxml."
+
+
+deploy:
+	make clean && make html
+	git co gh-pages
+	cp -pr _build/html/* ./
+	git add .
+	git commit -m 'update slides'
+	git push origin gh-pages
+	git co master

@@ -114,6 +114,21 @@ html_theme = "gopher"
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
+html_theme_options  = {
+   'ogp_image':'https://tell-k.github.io/pyconjp2015/_static/img/ogp.png',
+   'ogp_description': 'PyCon JP 2015 の発表資料です。PyPIでパッケージ配布するために、今どきの最低限押さえておきたいポイント、知ってると便利なツール、サービスなどを、簡単にまとめて一通り説明します。',
+
+   'og_url':'https://tell-k.github.io/pyconjp2015',
+   'og_site_name':'github',
+   'og_type':'article',
+   'og_author':'https://github.com/tell-k',
+
+   'twitter_card_type':'summary_large_image"',
+   'twitter_card_site':'@github',
+   'twitter_card_creator':'@tell_k',
+
+   'note_enabled': False,
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
