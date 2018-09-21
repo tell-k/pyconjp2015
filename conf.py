@@ -46,7 +46,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Test'
+project = u'pyconjp 2015'
 copyright = u'2015, tell-k'
 author = u'tell-k'
 
@@ -115,6 +115,8 @@ html_theme = "gopher"
 # documentation.
 #html_theme_options = {}
 html_theme_options  = {
+   'canonical':'https://tell-k.github.io/pyconjp2015',
+
    'ogp_image':'https://tell-k.github.io/pyconjp2015/_static/img/ogp.png',
    'ogp_description': 'PyCon JP 2015 の発表資料です。PyPIでパッケージ配布するために、今どきの最低限押さえておきたいポイント、知ってると便利なツール、サービスなどを、簡単にまとめて一通り説明します。',
 
