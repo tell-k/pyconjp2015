@@ -8,7 +8,7 @@ PyPIデビュー2015
 お前誰よ？
 =====================================
 
-.. image:: https://avatars3.githubusercontent.com/u/26263?v=3&s=150
+.. image:: https://pbs.twimg.com/profile_images/1045138776224231425/3GD8eWeG_200x200.jpg
 .. image:: _static/images/vxjmiemo.png
 
 * tell-k
